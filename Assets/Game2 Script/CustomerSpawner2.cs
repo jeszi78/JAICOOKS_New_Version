@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class CustomerSpawner2 : MonoBehaviour
 {
-    public GameObject customerPreFab;
+    public GameObject CustomerPrefab;
     public Transform[] waitingSpots;
 
     public List<Order> possibleOrders;
 
     private int currentIndex = 0;
-    public DeliveryCounter deliveryCounter;
+    public DeliveryCounter2 deliveryCounter;
     private Queue<Customer2> customerQueue = new Queue<Customer2>();
 
 
@@ -23,12 +23,12 @@ public class CustomerSpawner2 : MonoBehaviour
 
 
 
-    void SpawnCustomr()
+    void SpawnCustomer()
     {
         if (currentIndex >= waitingSpots.Length)
             return;
 
-        GameObject customerObj = Instantiate(customerPrefab, waitingSpots[currentIndex].position, Quaternion.identity);
+        GameObject customerObj = Instantiate(CustomerPrefab, waitingSpots[currentIndex].position, Quaternion.identity);
 
         Customer2 customer = customerObj.GetComponent<Customer2>();
 

@@ -10,6 +10,9 @@ public class CoffeeStoveCounter : BaseCounter2
     private GameObject currentFood;
     private bool isCooking = false;
 
+    public AudioSource audio;
+
+
 
 
     public override void Interact(InteractionScript2 player)
@@ -43,6 +46,8 @@ public class CoffeeStoveCounter : BaseCounter2
         currentFood = Instantiate(cookedFoodPrefab);
         currentFood.transform.SetParent(transform);
         currentFood.transform.localPosition = Vector3.up;
+
+        audio.Play();
 
         isCooking = false;
     }

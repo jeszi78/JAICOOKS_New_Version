@@ -11,7 +11,10 @@ public class Customer2 : MonoBehaviour
     public void SetOrder(Order newOrder)
     {
         order = newOrder;
-        Debug.Log("Customer wants: " + order.foodName);
+
+        string toppingsText = string.Join(", ", order.requiredToppings);
+
+        Debug.Log("Customer wants: " + order.foodName + " with " + toppingsText);
     }
 
     public bool CheckOrder(FoodObject2 food)
