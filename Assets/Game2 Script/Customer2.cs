@@ -7,6 +7,8 @@ public class Customer2 : MonoBehaviour
 
     public Order order;
 
+    public float ordertimer;
+    
 
     public void SetOrder(Order newOrder)
     {

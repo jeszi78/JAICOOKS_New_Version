@@ -10,6 +10,7 @@ public class CustomerSpawner2 : MonoBehaviour
     public List<Order> possibleOrders;
 
     private int currentIndex = 0;
+
     public DeliveryCounter2 deliveryCounter;
     private Queue<Customer2> customerQueue = new Queue<Customer2>();
 
