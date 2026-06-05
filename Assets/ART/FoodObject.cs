@@ -2,8 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BaseCounter : MonoBehaviour
+public class FoodObject : MonoBehaviour
 {
+    public List<string> toppings = new List<string>();
+
+    public
     // Start is called before the first frame update
     void Start()
     {

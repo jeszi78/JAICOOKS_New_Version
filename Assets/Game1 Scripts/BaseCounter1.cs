@@ -5,7 +5,7 @@ using UnityEngine;
 public abstract class BaseCounter1 : MonoBehaviour
 {
     public abstract void Interact(InteractionScript1 player);
-
+    
     // Start is called before the first frame update
     void Start()
     {
