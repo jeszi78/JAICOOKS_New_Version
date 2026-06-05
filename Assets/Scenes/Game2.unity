@@ -2910,7 +2910,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3763b093f01742a78195a54a95830c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cookedFoodPrefab: {fileID: 2963386710564311231, guid: b40b4e929dffd4b138eb4c6a44cc8fdf, type: 3}
+  cookedFoodPrefab: {fileID: 4756211756175585812, guid: f3632b4d88a264d739ca4cbf88716680, type: 3}
   cookTime: 3
   audio: {fileID: 1274146778}
 --- !u!82 &1274146778
