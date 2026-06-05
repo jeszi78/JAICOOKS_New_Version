@@ -10,7 +10,7 @@ public class LevelSelector : MonoBehaviour
     public void Game1()
     {
 
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+        SceneManager.LoadScene(2);
 
 
     }
@@ -18,7 +18,7 @@ public class LevelSelector : MonoBehaviour
     public void Game2()
     {
 
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 3);
+        SceneManager.LoadScene(3);
 
 
     }

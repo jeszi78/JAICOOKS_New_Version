@@ -22,7 +22,7 @@ public class GM : MonoBehaviour
     void Update()
     {
 
-        scoretext.text = "Score:$ ";
+        scoretext.text = "Score: " + score;
         if (isGameOver == false)
         {
             

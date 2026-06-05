@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 40e88160f438e441ea3b0e407d702e0d, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: acdfa01b263a542aea9f826daeff7aae, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -1056,7 +1056,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 910b6f66cea914638aa81281a1729113, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cookedFoodPrefab: {fileID: 110083031439518147, guid: bcd7efda1134b474e9cb322e2deb2a2e, type: 3}
+  cookedFoodPrefab: {fileID: 14165970888462941, guid: 4b26ba627aad74f36b2080a1468e5a74, type: 3}
   cookTime: 3
   audio: {fileID: 342155053}
 --- !u!1 &365621349
@@ -1090,8 +1090,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: 0
   scoretext: {fileID: 1401391160}
+  isGameOver: 0
   playerWon: 0
-  playerLose: 0
 --- !u!4 &365621351
 Transform:
   m_ObjectHideFlags: 0
@@ -1361,7 +1361,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac2ca459c19df4c81ada3a7f2dca70ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  foodPrefab: {fileID: 2853211273672779706, guid: d1b83b352dc6e473e84ef9685d14c3bd, type: 3}
+  foodPrefab: {fileID: 110083031439518147, guid: bcd7efda1134b474e9cb322e2deb2a2e, type: 3}
 --- !u!1 &761451000
 GameObject:
   m_ObjectHideFlags: 0
@@ -2910,7 +2910,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3763b093f01742a78195a54a95830c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cookedFoodPrefab: {fileID: 8602702468341748872, guid: 10544ca074f3e42888e6b84e487b562c, type: 3}
+  cookedFoodPrefab: {fileID: 2963386710564311231, guid: b40b4e929dffd4b138eb4c6a44cc8fdf, type: 3}
   cookTime: 3
   audio: {fileID: 1274146778}
 --- !u!82 &1274146778
@@ -4341,8 +4341,8 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0.8490566, g: 0.70850074, b: 0.5807227, a: 1}
-  m_Intensity: 1.5
+  m_Color: {r: 0.990566, g: 0.9691105, b: 0.83637416, a: 0.7294118}
+  m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -4381,7 +4381,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
