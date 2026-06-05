@@ -10,6 +10,8 @@ public class DeliveryCounter2 : BaseCounter2
     public AudioSource audio;
 
     public TextMeshProUGUI ordertext;
+    public GameObject GameManager;
+    public GameObject gameManagerObject;
     
 
     public void SetCustomer(Customer2 customer)
@@ -57,12 +59,17 @@ public class DeliveryCounter2 : BaseCounter2
             Destroy(heldFoodObj);
             player.ClearHeldFood();
             spawner.CustomerServed();
+            GameManager.GetComponent<GM>().score += 20;
+
+
+
 
         }
         else
         {
             Debug.Log("Wrong Order!");
             Destroy(heldFoodObj);
+            GameManager.GetComponent<GM>().score -= 20;
 
 
             audio.Play();

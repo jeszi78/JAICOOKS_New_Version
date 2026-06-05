@@ -10,6 +10,8 @@ public class InteractionScript2 : MonoBehaviour
 
     private GameObject heldFood;
 
+    public GameObject GameManager;
+
     // Start is called before the first frame update
     void Start()
     {
